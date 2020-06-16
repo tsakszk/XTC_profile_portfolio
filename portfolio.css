@@ -52,6 +52,56 @@
   font-size: 20px;
 }
 
+#portfolio {
+  background-color: #ECEFF1;
+}
+
+#portfolio .container {
+  width: 920px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+#portfolio .container .main {
+  margin-bottom: 30px;
+}
+
+#portfolio .container .main .portfolio-title {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 8px;
+}
+
+#portfolio .container .main .portfolio-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+}
+
+#portfolio .container .main .portfolio-body {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+
+#portfolio .container .sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#portfolio .container .sub img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
