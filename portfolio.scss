@@ -11,46 +11,47 @@
     margin:0 auto;
 
     a {
-        img{
-            height:70px
-        }
+      img{
+        height:70px
+      }
     }
 
     ul {
-        display: flex;
+      display: flex;
 
-        li {
-            width: 120px;
-            text-align: center;
-            line-height: 70px;
-            a {
-            font-size: 16px;
-            color:#FAFAFA;
-            text-decoration: none;
-            }
+    li {
+      width: 120px;
+      text-align: center;
+      line-height: 70px;
+
+        a {
+        font-size: 16px;
+        color:#FAFAFA;
+        text-decoration: none;
         }
+      }
     }
-}
+  }
 }
 
 #main-visual {
-    width: 100%;
-    height: 650px;
-    text-align: center;
-    color: #FAFAFA;
-    background-image: url("img/mv.png");
-    background-size:cover;
-    background-position:center;
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: #FAFAFA;
+  background-image: url("img/mv.png");
+  background-size:cover;
+  background-position:center;
 
-.main-visual-title {
-    padding-top: 200px;
-    font-size: 64px;
-}
+  .main-visual-title {
+      padding-top: 200px;
+      font-size: 64px;
+  }
 
-.main-visual-body {
-    padding-top: 10px;
-    font-size: 20px;
-}
+  .main-visual-body {
+      padding-top: 10px;
+      font-size: 20px;
+  }
 }
 
 #portfolio {
@@ -95,13 +96,71 @@
       img {
       width: 300px;
       margin-bottom: 10px;
-
       }
     }
-}
+  }
 }
 
+#future {
+  .container {
+    width: 980px;
+    height: auto;
+    margin:0 auto;
+    padding-bottom: 80px;
 
+    .main{
+      margin-bottom: 30px;
+      .future-title {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 90px;
+        padding-bottom: 8px;
+      }
+
+      .future-title::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        margin: 8px auto 0 auto;
+        background-color: #EC715F;
+      }
+
+      .future-body{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 1.5em
+      }
+    }
+
+    .sub {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content:space-between; //flexboxで横並びに指定した後に、どういった配置にするか決めるやつ
+      width: 980px;
+      height:auto;
+      .text{
+        width: 320px;
+        height: auto;
+        background-color: yellowgreen;
+        i {
+          font-size:60px;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .text-title{
+          font-size: 50px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -111,7 +170,7 @@
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 

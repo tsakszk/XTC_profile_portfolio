@@ -7,8 +7,12 @@
 .header .container {
   width: 1024px;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -17,6 +21,8 @@
 }
 
 .header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -92,9 +98,14 @@
 }
 
 #portfolio .container .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #portfolio .container .sub img {
@@ -102,11 +113,76 @@
   margin-bottom: 10px;
 }
 
+#future .container {
+  width: 980px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+#future .container .main {
+  margin-bottom: 30px;
+}
+
+#future .container .main .future-title {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 8px;
+}
+
+#future .container .main .future-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+}
+
+#future .container .main .future-body {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+
+#future .container .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 980px;
+  height: auto;
+}
+
+#future .container .sub .text {
+  width: 320px;
+  height: auto;
+  background-color: yellowgreen;
+}
+
+#future .container .sub .text i {
+  font-size: 60px;
+  margin: 0 auto;
+}
+
+#future .container .sub .text .text-title {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 html, body, div, span, object, iframe,
@@ -203,3 +279,4 @@ hr {
 input, select {
   vertical-align: middle;
 }
+/*# sourceMappingURL=portfolio.css.map */
