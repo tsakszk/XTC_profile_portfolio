@@ -101,7 +101,7 @@
   }
 }
 
-#future {
+#feature {
   .container {
     width: 980px;
     height: auto;
@@ -144,14 +144,15 @@
       .text{
         width: 320px;
         height: auto;
-        background-color: yellowgreen;
         i {
           font-size:60px;
-          text-align: center;
           margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .text-title{
-          font-size: 50px;
+          font-size: 20px;
           padding-top: 10px;
           padding-bottom: 10px;
           text-align: center;
@@ -162,7 +163,32 @@
   }
 }
 
+#profile {
+  background-color: #ECEFF1;
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+    .text {
+      font-size: 32px;
+      text-align: center;
+      padding-top: 90px;
+    }
 
+    .text::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      margin: 8px auto 0 auto;
+      background-color: #EC715F;
+    }
+    .comment {
+      font-size: 16px;
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+}
 
 
 
