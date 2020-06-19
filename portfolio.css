@@ -7,12 +7,8 @@
 .header .container {
   width: 1024px;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -21,8 +17,6 @@
 }
 
 .header .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -56,6 +50,7 @@
 #main-visual .main-visual-body {
   padding-top: 10px;
   font-size: 20px;
+  line-height: 1.5em;
 }
 
 #portfolio {
@@ -98,14 +93,9 @@
 }
 
 #portfolio .container .sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #portfolio .container .sub img {
@@ -149,14 +139,9 @@
 }
 
 #feature .container .sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 980px;
   height: auto;
 }
@@ -164,20 +149,16 @@
 #feature .container .sub .text {
   width: 320px;
   height: auto;
+  margin-top: 30px;
 }
 
 #feature .container .sub .text i {
   font-size: 60px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 #feature .container .sub .text .text-title {
@@ -188,8 +169,16 @@
   margin: 0 auto;
 }
 
+#feature .container .sub .text .text-body {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
 #profile {
   background-color: #ECEFF1;
+  line-height: 1.5em;
 }
 
 #profile .container {
@@ -197,13 +186,13 @@
   margin: 0 auto;
 }
 
-#profile .container .text {
+#profile .container .main .text {
   font-size: 32px;
-  padding-top: 90px;
   text-align: center;
+  padding-top: 90px;
 }
 
-#profile .container .text::after {
+#profile .container .main .text::after {
   content: "";
   display: block;
   width: 70px;
@@ -212,10 +201,47 @@
   background-color: #EC715F;
 }
 
-#profile .container .comment {
+#profile .container .main .comment {
   font-size: 16px;
   margin-top: 30px;
   text-align: center;
+}
+
+#profile .container .sub {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 90px;
+  margin-top: 30px;
+}
+
+#profile .container .sub .picture {
+  width: 512px;
+  text-align: center;
+}
+
+#profile .container .sub .picture img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+#profile .container .sub .introduction {
+  width: 512px;
+}
+
+#profile .container .sub .introduction .myname {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#profile .container .sub .introduction .comment {
+  font-size: 16px;
+}
+
+#profile .container .sub .introduction .myskills {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 /*
@@ -319,4 +345,3 @@ hr {
 input, select {
   vertical-align: middle;
 }
-/*# sourceMappingURL=portfolio.css.map */

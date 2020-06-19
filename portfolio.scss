@@ -51,6 +51,7 @@
   .main-visual-body {
       padding-top: 10px;
       font-size: 20px;
+      line-height: 1.5em;
   }
 }
 
@@ -144,12 +145,14 @@
       .text{
         width: 320px;
         height: auto;
+        margin-top: 30px;
         i {
           font-size:60px;
           margin: 0 auto;
           display: flex;
           align-items: center;
           justify-content: center;
+          padding-bottom: 10px;
         }
         .text-title{
           font-size: 20px;
@@ -158,6 +161,12 @@
           text-align: center;
           margin: 0 auto;
         }
+        .text-body{
+          font-size: 16px;
+          text-align: left;
+          line-height: 1.5em;
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -165,31 +174,64 @@
 
 #profile {
   background-color: #ECEFF1;
+  line-height: 1.5em;
   .container {
     width: 1024px;
     margin: 0 auto;
-    .text {
-      font-size: 32px;
-      text-align: center;
-      padding-top: 90px;
-    }
+    .main {
+      .text {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 90px;
+      }
 
-    .text::after {
-      content: "";
-      display: block;
-      width: 70px;
-      height: 3px;
-      margin: 8px auto 0 auto;
-      background-color: #EC715F;
+      .text::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        margin: 8px auto 0 auto;
+        background-color: #EC715F;
+      }
+
+      .comment {
+        font-size: 16px;
+        margin-top: 30px;
+        text-align: center;
+      }
     }
-    .comment {
-      font-size: 16px;
+    .sub {
+      display: flex;
+      justify-content:space-around;
+      padding-bottom: 90px;
       margin-top: 30px;
-      text-align: center;
+      .picture {
+        width: 512px;
+        text-align: center;
+        img {
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+        }
+      }
+      .introduction {
+        width: 512px;
+        .myname {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+        .comment {
+          font-size: 16px;
+        }
+        .myskills {
+          font-size: 20px;
+          margin-top: 20px;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }
-
 
 
 /*
