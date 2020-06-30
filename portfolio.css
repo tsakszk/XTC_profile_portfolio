@@ -1,3 +1,106 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
 .header {
   width: 100%;
   height: 70px;
@@ -258,6 +361,7 @@
 
 #profile .container .secondary .introduction {
   width: 512px;
+  text-align: center;
 }
 
 #profile .container .secondary .introduction .myname {
@@ -383,7 +487,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 20px;
 }
 
 .footer {
@@ -399,105 +502,232 @@
   line-height: 70px;
 }
 
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+@media screen and (max-width: 768px) {
+  body .header {
+    height: 50px;
+  }
+  body .header .container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  body .header .container .logo {
+    height: 50px;
+  }
+  body .header .container nav {
+    display: none;
+  }
+  body #main-visual {
+    background-image: url(img/code.png);
+  }
+  body #main-visual .container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  body #portfolio .container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+  }
+  body #portfolio .container .secondary {
+    display: block;
+  }
+  body #portfolio .container .secondary img {
+    width: 60%;
+    height: 60%;
+    margin: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+  body #feature .container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  body #feature .container .secondary {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  body #feature .container .secondary .text {
+    margin: 0 auto;
+  }
+  body #feature .container .secondary .text .text-body {
+    margin: 15px 15px;
+  }
+  body #profile .container {
+    width: 90%;
+  }
+  body #profile .container .secondary {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+  body #profile .container .secondary .inner {
+    width: 90%;
+  }
+  body #profile .container .secondary .inner .picture {
+    margin: 0 auto;
+    width: 90%;
+  }
+  body #profile .container .secondary .inner .introduction {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  body #contact .container {
+    width: 90%;
+  }
+  body #contact .container .tertiary {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  body #contact .container .tertiary .inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+  body #contact .container .tertiary .inner .contact {
+    width: 100%;
+  }
+  body #contact .container .tertiary .inner .contact .primary {
+    padding: 30px 30px;
+    width: 100%;
+  }
+  body #contact .container .tertiary .inner .contact .primary .mail, body #contact .container .tertiary .inner .contact .primary .addr, body #contact .container .tertiary .inner .contact .primary .tel, body #contact .container .tertiary .inner .contact .primary .num {
+    margin: 20px 20px;
+  }
+  body #contact .container .tertiary .inner .site {
+    width: 100%;
+  }
+  body #contact .container .tertiary .inner .site .primary {
+    margin-bottom: 30px;
+  }
+  body #contact .container .tertiary .inner .site .primary .sns {
+    margin: 20px 20px;
+  }
+  body #contact .container .tertiary .inner .site .primary .icon {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-body {
-  line-height: 1;
+@media screen and (min-width: 768px) {
+  body .header .container nav ul {
+    text-align: right;
+  }
+  body .header .container nav ul li {
+    display: inline;
+  }
+  body .header .container #nav-drawer {
+    display: none;
+  }
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+#nav-drawer {
+  position: relative;
 }
 
-nav ul {
-  list-style: none;
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display: none;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-input, select {
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
   vertical-align: middle;
+}
+
+/*ハンバーガーの形をCSSで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: white;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+
+#nav-open span:before {
+  bottom: -8px;
+}
+
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒箇所*/
+#nav-close {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+/*メニューの中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 90%;
+  max-width: 100px;
+  height: 100%;
+  background: #282c37;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 3em;
+  color: white;
+}
+
+/*チェックがついたら表示させる*/
+#nav-input:checked ~ #nav-close {
+  display: block;
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  -ms-flex-direction: row;
 }
 /*# sourceMappingURL=portfolio.css.map */

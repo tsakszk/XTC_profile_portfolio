@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio.css" media="screen">
 	<title>portfolio</title>
 </head>
 <body>
     <header class="header">
 		<div class="container">
-			<a href="#mv"><img src="img/logo.png" alt="ロゴ"></a>
+			<a href="#mv"><img class="logo" src="img/logo.png" alt="ロゴ"></a>
 			<nav>
 				<ul>
 					<li><a href="#portfolio">Portfolio</a></li>
@@ -20,6 +20,19 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
+			<div class="header-logo-menu">
+				<div id="nav-drawer">
+					<input id="nav-input" type="checkbox" class="nav-unshown">
+					<label id="nav-open" for="nav-input"><span></span></label>
+					<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+					<div id="nav-content">
+						<a href="#portfolio">Portfolio</a>
+						<a href="#feature">Feature</a>
+						<a href="#profile">Profile</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
@@ -77,7 +90,7 @@
 					<p class="text-body">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
 				</div>
 				<div class="text">
-					<i class="fas fa-cogs fa-spin"></i>
+					<i class="fas fa-cogs"></i>
 					<h3 class="text-title">Strength3</h3>
 					<p class="text-body">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
 				</div>
@@ -96,12 +109,14 @@
 				</div>
 			</div>
 			<div class="secondary">
-				<div class="picture"><img src="img/my-icon.jpg" alt="プロフィール写真"></div>
-				<div class="introduction">
-					<h3 class="myname">MyName</h3>
-					<p class="comment">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
-					<h3 class="myskills">MySkills</h3>
-					<p class="comment">HTML/CSS,JavaScript,JQuery,Ruby,RubyOnRails,Python,Linux</p>
+				<div class="inner">
+					<div class="picture"><img src="img/my-icon.jpg" alt="プロフィール写真"></div>
+					<div class="introduction">
+						<h3 class="myname">MyName</h3>
+						<p class="comment">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+						<h3 class="myskills">MySkills</h3>
+						<p class="comment">HTML/CSS,JavaScript,JQuery,Ruby,RubyOnRails,Python,Linux</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -121,22 +136,24 @@
 				</p>
 			</div>
 			<div class="tertiary">
-				<div class="contact">
-					<div class="primary">
-						<h3 class="mail">Mail</h3>
-						<a class="addr" href="mailto:tsakszk1986@gmail.com">hoge001@hoge.com</a>
-						<h3 class="tel">Tel</h3>
-						<a class="num" href="tel:1234-5678-910">123-1234-1234</a>
+				<div class="inner">
+					<div class="contact">
+						<div class="primary">
+							<h3 class="mail">Mail</h3>
+							<a class="addr" href="mailto:tsakszk1986@gmail.com">hoge001@hoge.com</a>
+							<h3 class="tel">Tel</h3>
+							<a class="num" href="tel:1234-5678-910">123-1234-1234</a>
+						</div>
 					</div>
-				</div>
-				<div class="site">
-					<div class="primary">
-						<h3 class="sns">SNS</h3>
-						<i class="icon">
-							<i class="fab fa-facebook-f"></i>
-							<i class="fab fa-twitter"></i>
-							<i class="fab fa-instagram"></i>
-						</i>
+					<div class="site">
+						<div class="primary">
+							<h3 class="sns">SNS</h3>
+							<i class="icon">
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-twitter"></i>
+								<i class="fab fa-instagram"></i>
+							</i>
+						</div>
 					</div>
 				</div>
 			</div>
